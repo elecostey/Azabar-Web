@@ -1,9 +1,3 @@
-html {
-  font-family: sans-serif;
-}
+@import "custom/variables/variables";
 
-
-.title {
-  color: red;
-  background-color: yellow;
-}
+@import "custom/nav";
