@@ -1,0 +1,44 @@
+{
+  "name": "Azabar-Web",
+  "version": "4.0.0",
+  "description": "Azabar Website",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "webpack",
+    "lint": "standard",
+    "test": "standard && webpack --bail",
+    "dev": "webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bensmithett/webpack-css-example.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bensmithett/webpack-css-example/issues"
+  },
+  "homepage": "https://github.com/bensmithett/webpack-css-example",
+  "dependencies": {
+    "autoprefixer": "^7.0.1",
+    "babel-core": "^6.9.0",
+    "babel-loader": "^7.0.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.1.4",
+    "css-loader": "^0.28.1",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "node-sass": "^4.1.0",
+    "postcss-loader": "^2.0.3",
+    "sass-loader": "^6.0.3",
+    "style-loader": "^0.19.0",
+    "webpack": "^3.0.0",
+    "jquery": "^3.2.1"
+  },
+  "devDependencies": {
+    "html-webpack-externals-plugin": "^3.6.0",
+    "html-webpack-plugin": "^2.30.1",
+    "resolve-url-loader": "^2.2.1",
+    "standard": "^10.0.2",
+    "webpack-dev-server": "^2.10.0"
+  }
+}
