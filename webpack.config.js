@@ -19,7 +19,7 @@ const config = {
     rules: [
       {
         test: /\.js$/,
-        exclude: /node_modules/,
+        exclude: [path.resolve(__dirname, 'src/scripts/vendor'), /node_modules/],
         use: ['babel-loader']
       },
       {
@@ -38,6 +38,10 @@ const config = {
           use: 'css-loader?sourceMap!resolve-url-loader?sourceMap!sass-loader?sourceMap',
           publicPath: '/'
         })
+      },
+      {
+        test: /\.html$/,
+        use: ['html-loader?interpolate']
       }
     ]
   },
