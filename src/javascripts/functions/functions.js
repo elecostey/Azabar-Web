@@ -1,6 +1,8 @@
-const functionsInit = function () {
-    $(function () {
-        console.log('Hello world');
+import nav from './nav';
+
+const functionsInit = function() {
+    $(function() {
+        nav();
     });
 };
 
