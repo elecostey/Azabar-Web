@@ -8,10 +8,10 @@ const swiper = function() {
             el: '.swiper-pagination',
             clickable: true,
         },
-//        autoplay: {
-//            delay: 10000,
-//            disableOnInteraction: false,
-//        },
+        autoplay: {
+            delay: 10000,
+            disableOnInteraction: false,
+        },
     });
 };
 
