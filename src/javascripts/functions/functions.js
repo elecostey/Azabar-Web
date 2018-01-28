@@ -5,6 +5,7 @@ const functionsInit = function() {
     $(function() {
         nav();
         swiper();
+
     });
 };
 

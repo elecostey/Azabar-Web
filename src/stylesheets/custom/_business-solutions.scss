@@ -14,6 +14,26 @@
         width: 20%;
         max-width: 270px;
 
+        &--right {
+            top: 57%;
+            left: 67%;
+        }
+
+        &--right-top {
+            top: 52%;
+            left: 74%;
+        }
+
+        &--bottom {
+            top: 84%;
+            left: 59%;
+        }
+
+        &--center {
+            top: 80%;
+            left: 41%;
+        }
+
         img {
             display: block;
 
