@@ -1,0 +1,16 @@
+.swiper-container {
+    max-height: 100%;
+
+}
+
+.swiper-slide {
+    &--business-solutions {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        img {
+            width: 100%;
+        }
+    }
+}

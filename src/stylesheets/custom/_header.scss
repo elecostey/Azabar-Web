@@ -1,6 +1,8 @@
 .header {
     position: fixed;
     width: 100%;
+    z-index: 10;
+    background-color: white;
 
     &__container {
         display: flex;
@@ -27,6 +29,7 @@
         padding: 0;
         align-items: center;
 
+
         @media (max-width: 950px) {
             width: calc(100% + 30px);
             position: absolute;
@@ -37,6 +40,7 @@
             transform: translateY(-100%);
             transition: 600ms ease-out;
             z-index: -1;
+            background-color: white;
         }
 
         &--visible {
@@ -160,7 +164,7 @@
         width: 20px;
         height: 3px;
         margin: 3px;
-        background-color: #1b6d85;
+        background-color: $blue;
     }
 }
 
