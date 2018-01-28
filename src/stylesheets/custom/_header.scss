@@ -11,7 +11,7 @@
         height: 160px;
         background-color: white;
 
-        @media (max-width: 950px) {
+        @media (max-width: 991px) {
             height: 80px;
         }
     }
@@ -30,12 +30,11 @@
         align-items: center;
 
 
-        @media (max-width: 950px) {
-            width: calc(100% + 30px);
-            position: absolute;
+        @media (max-width: 991px) {
+            width: 100%;
+            position: fixed;
             top: 80px;
             display: block;
-            margin: 0 -15px;
             left: 0;
             transform: translateY(-100%);
             transition: 600ms ease-out;
@@ -52,7 +51,7 @@
             text-align: center;
             color: $blue;
 
-            @media (max-width: 950px) {
+            @media (max-width: 991px) {
                 width: 100%;
             }
 
@@ -78,7 +77,7 @@
             width: 120px;
         }
 
-        @media (max-width: 950px) {
+        @media (max-width: 991px) {
             width: 100%;
             text-align: center;
             padding: 15px 0;
@@ -121,7 +120,7 @@
         width: 130px;
         margin-left: 15px;
 
-        @media (max-width: 950px) {
+        @media (max-width: 991px) {
             height: 60px;
             margin: 10px 0 10px 15px;
 
@@ -154,7 +153,7 @@
         width: 20px;
         height: 20px;
 
-        @media (max-width: 950px) {
+        @media (max-width: 991px) {
             display: block;
         }
     }

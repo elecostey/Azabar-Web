@@ -2,8 +2,6 @@
 
 // Make jquery available
 import jQuery from 'jquery';
-import 'swiper/dist/css/swiper.css';
-
 window.$ = jQuery;
 
 // Other javascript files

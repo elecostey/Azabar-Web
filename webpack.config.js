@@ -3,7 +3,7 @@ const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-const vendorSrc = ['jquery', 'bootstrap-sass', './src/stylesheets/vendor.scss']; // From node_modules or specific path
+const vendorSrc = ['jquery', 'bootstrap-sass', './src/stylesheets/vendor.scss', 'swiper/dist/css/swiper.css']; // From node_modules or specific path
 
 const config = {
     entry: {
@@ -53,8 +53,8 @@ const config = {
                         loader: "file-loader",
                         options: {
                             name: '[name].[ext]',
-                            publicPath: '../',
-                            outputPath: '../images/'
+                            publicPath: 'images/',
+                            outputPath: '../../../images/'
                         }
                     }
                 ]

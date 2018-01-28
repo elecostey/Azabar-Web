@@ -6,4 +6,20 @@
     @media (max-width: 950px) {
         padding-top: 80px;
     }
+
+    &__buttons {
+        position: absolute;
+        top: 65%;
+        left: 58%;
+        width: 20%;
+        max-width: 270px;
+
+        img {
+            display: block;
+
+            &:first-child {
+                margin-bottom: 2px;
+            }
+        }
+    }
 }
