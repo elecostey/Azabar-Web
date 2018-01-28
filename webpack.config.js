@@ -53,8 +53,8 @@ const config = {
                         loader: "file-loader",
                         options: {
                             name: '[name].[ext]',
-                            publicPath: 'images/',
-                            outputPath: '../../../images/'
+                            publicPath: '../../',
+                            outputPath: 'images/',
                         }
                     }
                 ]
