@@ -54,7 +54,7 @@ const config = {
                         options: {
                             name: '[name].[ext]',
                             publicPath: '../',
-                            outputPath: 'images/'
+                            outputPath: '../images/'
                         }
                     }
                 ]
