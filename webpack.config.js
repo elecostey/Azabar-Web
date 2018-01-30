@@ -21,8 +21,7 @@ const config = {
             {
                 test: /\.js$/,
                 exclude: [
-                    path.resolve(__dirname, 'src/scripts/vendor'),
-                    /node_modules/],
+                    path.resolve(__dirname, 'src/scripts/vendor')],
                 use: ['babel-loader'],
             },
             {
