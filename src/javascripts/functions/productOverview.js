@@ -4,13 +4,15 @@ const productOverview = function() {
 
     productBtn.hover(
     function() {
+        const self = $(this);
         delay = setTimeout(function(){
-            $(this).siblings('.products__preview-img').fadeIn();
+            self.siblings('.products__preview-img').fadeIn();
         }, 600);
     },
     function() {
+        const self = $(this);
         clearTimeout(delay);
-        $(this).siblings('.products__preview-img').fadeOut();
+        self.siblings('.products__preview-img').fadeOut();
     });
 };
 

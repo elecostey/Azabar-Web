@@ -8,7 +8,6 @@ const nav = function() {
         } else {
             headerNav.addClass('header__nav--visible');
         }
-
     });
 
 };
