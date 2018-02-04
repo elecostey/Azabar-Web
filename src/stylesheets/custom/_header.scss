@@ -2,6 +2,7 @@
     position: fixed;
     width: 100%;
     z-index: 10;
+    top: 0;
 
     &__container {
         display: flex;
@@ -23,6 +24,9 @@
         display: flex;
         justify-content: center;
         width: calc(100% - 275px);
+        border-radius: 0;
+        margin-bottom: 0;
+        border: none;
     }
 
     &__nav {
@@ -61,13 +65,18 @@
             &:hover {
                 color: $blue;
                 text-decoration: none;
+                background-color: white !important;
+            }
+
+            &:focus {
+                background-color: white !important;
             }
         }
     }
 
     &__link {
         position: relative;
-        display: flex;
+        display: flex !important;
         align-items: center;
         width: 170px;
         justify-content: center;
@@ -109,11 +118,15 @@
             border-radius: 5px;
         }
 
-        &--active {
+        &.active {
             &:after {
                 background-color: $light-blue;
             }
 
+        }
+
+        a {
+            padding: 0 !important;
         }
     }
 

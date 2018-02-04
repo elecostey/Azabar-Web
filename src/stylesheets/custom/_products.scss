@@ -29,11 +29,12 @@
 
     &__preview-img {
         display: none;
-        position: fixed;
-        top: 50%;
+        position: absolute;
+        bottom: 105%;
         z-index: 2;
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translateX(-50%);
+        width: 100%;
     }
 }

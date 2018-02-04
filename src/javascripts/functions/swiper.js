@@ -1,7 +1,7 @@
 import Swiper from 'swiper';
 
 const swiper = function() {
-    new Swiper('.swiper-container', {
+    new Swiper('.swiper-container--business-solutions', {
         slidesPerView: 1,
         loop: true,
         pagination: {
@@ -12,6 +12,15 @@ const swiper = function() {
             delay: 10000,
             disableOnInteraction: false,
         },
+    });
+
+    new Swiper('.swiper-container--references', {
+        slidesPerView: 'auto',
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        }
     });
 };
 

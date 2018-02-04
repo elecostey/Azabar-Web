@@ -37,7 +37,7 @@ const config = {
                 test: /\.(sass|scss)$/,
                 use: ExtractTextPlugin.extract({
                     fallback: 'style-loader',
-                    use: 'css-loader?sourceMap!resolve-url-loader?sourceMap!sass-loader?sourceMap',
+                    use: 'css-loader?url=false!resolve-url-loader?sourceMap!postcss-loader?sourceMap!sass-loader?sourceMap&importLoaders=1',
                     publicPath: '/',
                 }),
             },

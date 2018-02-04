@@ -3,5 +3,10 @@
     max-width: 1220px;
     margin: 0 auto;
     box-shadow: 4px 0px 14px rgba(29, 29, 29, 0.33), -4px 0px 14px rgba(29, 29, 29, 0.33);
+    padding-top: 160px;
+
+    @media (max-width: 991px) {
+        padding-top: 80px;
+    }
 
 }
