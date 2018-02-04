@@ -5,10 +5,12 @@
         position: absolute;
         bottom: 3%;
         display: flex;
-        width: 80%;
-        justify-content: space-around;
         left: 50%;
         transform: translateX(-50%);
+
+        a {
+            margin: 0 30px;
+        }
     }
 
     &__preview {
