@@ -1,0 +1,34 @@
+<section id="contact" class="contact">
+    <form action="send_form_email.php" method="post">
+        <div class="row">
+            <div class="col-md-7">
+                <input type="text" name="name" placeholder="Ime" required/>
+                <input type="email" name="email" id="email" placeholder="E-mail" required/>
+                <input type="text" name="phone" placeholder="Telefon" required/>
+                <input type="text" name="company" placeholder="Tvrtka" required/>
+            </div>
+            <div class="col-md-5">
+                <div>
+                    <p>Subject:</p>
+                    <input class="radio" type="radio" id="option1" name="subject" value="information" checked required/><label
+                        for="option1">gimme info</label>
+                    <input class="radio" type="radio" id="option2" name="subject" value="appointment"><label
+                        for="option2">I want to make an appointment</label>
+                    <input id="subject" type="hidden" name="lang" value="">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                <div>
+                    <textarea name="message" id="message" placeholder="Poruka" required></textarea>
+                </div>
+
+            </div>
+            <div class="col-md-4">
+                <input id="btn" type="submit" value="Send Message" />
+            </div>
+        </div>
+
+    </form>
+</section>

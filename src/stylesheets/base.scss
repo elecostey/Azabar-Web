@@ -6,11 +6,12 @@
 @import "custom/products";
 @import "custom/references";
 @import "custom/about";
+@import "custom/contact";
 
 html, body {
     height: 100%;
 }
 
 body {
-    background-color: #cfdae8;
+    background-color: $light-grey-blue;
 }
