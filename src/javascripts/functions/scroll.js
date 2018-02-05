@@ -22,11 +22,15 @@ const scroll = function() {
         offset: topOffset
     });
 
-    $('.header__link a, .header__brand').click(function () {
-        $(this).parent('.header__link').addClass('active');
-        $('.header__link a').not(this).parent('.header__link').removeClass('active');
+    $('.header__link, .header__brand').click(function () {
+        $(this).addClass('active');
+        $('.header__link').not(this).removeClass('active');
+        let sectionId = $(this).attr('href');
+        if ($(this).hasClass('header__link')) {
+           sectionId = $(this).children().attr('href');
+        }
         $('html, body').animate({
-            scrollTop: $($(this).attr('href')).offset().top - topOffset
+            scrollTop: $(sectionId).offset().top - topOffset
         }, 1000);
         return false;
     });
