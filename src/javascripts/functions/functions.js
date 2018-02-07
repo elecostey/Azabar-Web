@@ -3,6 +3,9 @@ import swiper from './swiper';
 import productOverview from './productOverview';
 import scroll from './scroll';
 import referencesPreview from './referencesPreview';
+import getEmailSubject from './getEmailSubject';
+import formSubmitHandler from './formSubmitHandler';
+
 
 const functionsInit = function() {
     $(function() {
@@ -11,6 +14,8 @@ const functionsInit = function() {
         productOverview();
         scroll();
         referencesPreview();
+        getEmailSubject();
+        formSubmitHandler();
     });
 };
 

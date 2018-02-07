@@ -1,34 +1,38 @@
 <section id="contact" class="contact">
-    <form action="send_form_email.php" method="post">
+    <h2 class="contact__title">Kako Vam možemo pomoći?</h2>
+    <form action="../../../send-email.php" method="post">
         <div class="row">
-            <div class="col-md-7">
+            <div class="col-md-6">
                 <input type="text" name="name" placeholder="Ime" required/>
-                <input type="email" name="email" id="email" placeholder="E-mail" required/>
+                <input type="email" name="email" placeholder="E-mail" required/>
                 <input type="text" name="phone" placeholder="Telefon" required/>
                 <input type="text" name="company" placeholder="Tvrtka" required/>
             </div>
-            <div class="col-md-5">
-                <div>
-                    <p>Subject:</p>
-                    <input class="radio" type="radio" id="option1" name="subject" value="information" checked required/><label
-                        for="option1">gimme info</label>
-                    <input class="radio" type="radio" id="option2" name="subject" value="appointment"><label
-                        for="option2">I want to make an appointment</label>
-                    <input id="subject" type="hidden" name="lang" value="">
+            <div class="col-md-6">
+                <div class="input-checkbox">
+                    <h3 class="contact__title contact__title--small">Odaberite što Vas zanima</h3>
+                    <input class="input-checkbox" type="radio" id="option1" name="subject" value="comment" checked required/>
+                    <label for="option1">Želim ostaviti komentar</label>
+                    <input class="input-checkbox" type="radio" id="option2" name="subject" value="information">
+                    <label for="option2">Trebam dodatne informacije</label>
+                    <input class="input-checkbox" type="radio" id="option3" name="subject" value="appointment">
+                    <label for="option3">Želim ugovoriti sastanak</label>
+                    <input class="input-checkbox" type="radio" id="option4" name="subject" value="buy">
+                    <label for="option4">Želim kupiti poslovno rješenje</label>
+                    <input type="hidden" id="subject-text" name="subject-text" value="">
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-md-8">
-                <div>
-                    <textarea name="message" id="message" placeholder="Poruka" required></textarea>
-                </div>
-
+                <textarea name="message" placeholder="Poruka" required></textarea>
             </div>
             <div class="col-md-4">
-                <input id="btn" type="submit" value="Send Message" />
+                <div class="contact__send">
+                    <input id="btn" type="submit" value="Pošalji"/>
+                </div>
             </div>
         </div>
-
     </form>
+    <div class="contact__success-mail">Thank you for your message</div>
 </section>
