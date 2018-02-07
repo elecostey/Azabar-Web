@@ -1,6 +1,10 @@
 .contact {
     background-color: white;
-    padding: 30px 100px;
+    padding: 30px 100px 60px;
+
+    @media (max-width: 991px) {
+        padding: 30px;
+    }
 
     input,
     textarea {
@@ -56,6 +60,12 @@
         padding-top: 5px;
         border-bottom-right-radius: 0;
         border-top-right-radius: 0;
+
+        @media (max-width: 991px) {
+            margin-bottom: 5px;
+            border-bottom-right-radius: 8px;
+            border-top-right-radius: 8px;
+        }
     }
 
     &__title {
@@ -71,11 +81,26 @@
     }
 
     &__send {
-        margin-left: -30px;
         border: 2px solid $blue4;
         height: 140px;
         border-bottom-right-radius: 8px;
         border-top-right-radius: 8px;
+        background-color: white;
+
+        @media (max-width: 991px) {
+            border-bottom-left-radius: 8px;
+            border-top-left-radius: 8px;
+        }
+
+        @media (min-width: 650px) and (max-width: 991px) {
+            display: flex;
+            align-items: center;
+        }
+        
+        @media (min-width: 992px) {
+            margin-left: -60px;
+            width: calc(100% + 60px);
+        }
     }
 
     &__success-mail {

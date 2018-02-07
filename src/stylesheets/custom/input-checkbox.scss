@@ -4,6 +4,10 @@
     border-radius: 8px;
     height: 190px;
 
+    @media (max-width: 991px) {
+        margin-bottom: 10px;
+    }
+
     input {
         display: none;
 
