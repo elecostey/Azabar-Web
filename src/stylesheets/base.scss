@@ -9,11 +9,13 @@
 @import "custom/contact";
 @import "custom/input-checkbox";
 @import "custom/g-recaptcha";
+@import "custom/title";
+@import "custom/box";
 
 html, body {
     height: 100%;
 }
 
 body {
-    background-color: $light-grey-blue;
+    background-color: $hawkes-blue;
 }

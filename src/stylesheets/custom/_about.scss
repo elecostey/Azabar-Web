@@ -10,7 +10,7 @@
             font-size: 20px;
             line-height: 22px;
             word-spacing: -1px;
-            color: $dark-blue;
+            color: $lochmara;
         }
     }
 
@@ -26,12 +26,12 @@
     }
 
     &__data {
-        background-color: $light-grey;
+        background-color: $whisper;
         width: 100%;
         margin-left: 5px;
         border-top-right-radius: 8px;
         border-bottom-right-radius: 8px;
-        color: $dark-grey;
+        color: $dim-grey;
         padding: 10px;
 
         @media (max-width: 1215px) {

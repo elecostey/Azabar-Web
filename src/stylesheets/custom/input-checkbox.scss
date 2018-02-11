@@ -1,6 +1,6 @@
 .input-checkbox {
     padding: 10px 30px;
-    border: 2px solid $dark-blue;
+    border: 2px solid $lochmara;
     border-radius: 8px;
     height: 190px;
 
@@ -25,16 +25,16 @@
         display: block;
         margin-bottom: 10px;
         font-size: 20px;
-        color: $dark-blue;
+        color: $lochmara;
 
 
         &:before {
             content: "";
             background: white;
-            color: $dark-blue;
+            color: $lochmara;
             width: 24px;
             height: 24px;
-            border: 3px solid $dark-blue;
+            border: 3px solid $lochmara;
             border-radius: 3px;
             font-size: 18px;
             font-weight: 700;

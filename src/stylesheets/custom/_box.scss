@@ -1,0 +1,30 @@
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70px;
+
+    &--grey {
+        background-color: $dim-grey;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        margin: 8px 0;
+    }
+
+    &--blue {
+        background-color: $picton-blue;
+        justify-content: flex-start;
+        display: block;
+        
+    }
+
+    &--white {
+        background-color: white;
+        border-radius: 8px;
+        min-height: 40px;
+    }
+
+    &--aligned-left {
+        justify-content: flex-start;
+    }
+}

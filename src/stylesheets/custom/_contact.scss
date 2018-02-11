@@ -9,31 +9,31 @@
     input,
     textarea {
         width: 100%;
-        background-color: $blue4;
+        background-color: $light-sky-blue;
         border-radius: 8px;
         border: none;
         font-size: 20px;
         padding: 0 20px;
-        color: $dark-blue;
+        color: $lochmara;
         outline: none;
 
         &::-webkit-input-placeholder {
-            color: $dark-blue;
+            color: $lochmara;
             opacity: 0.5;
         }
 
         &::-moz-placeholder {
-            color: $dark-blue;
+            color: $lochmara;
             opacity: 0.5;
         }
 
         &:-ms-input-placeholder {
-            color: $dark-blue;
+            color: $lochmara;
             opacity: 0.5;
         }
 
         &:-moz-placeholder {
-            color: $dark-blue;
+            color: $lochmara;
             opacity: 0.5;
         }
     }
@@ -47,7 +47,7 @@
     input[type='submit'] {
         height: 40px;
         color: white;
-        background-color: $dark-blue;
+        background-color: $lochmara;
         width: 230px;
         display: block;
         margin: 0 auto;
@@ -70,7 +70,7 @@
 
     &__title {
         text-align: center;
-        color: $dark-blue;
+        color: $lochmara;
         font-weight: bold;
         margin: 0 0 30px;
 
@@ -81,7 +81,7 @@
     }
 
     &__send {
-        border: 2px solid $blue4;
+        border: 2px solid $light-sky-blue;
         height: 140px;
         border-bottom-right-radius: 8px;
         border-top-right-radius: 8px;

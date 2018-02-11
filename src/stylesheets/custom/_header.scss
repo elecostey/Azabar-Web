@@ -56,14 +56,14 @@
         a {
             width: 80px;
             text-align: center;
-            color: $blue;
+            color: $jordy-blue;
 
             @media (max-width: 991px) {
                 width: 100%;
             }
 
             &:hover {
-                color: $blue;
+                color: $jordy-blue;
                 text-decoration: none;
                 background-color: white !important;
             }
@@ -103,7 +103,7 @@
 
         &:hover {
             &:after {
-                background-color: $light-blue;
+                background-color: $pale-cornflower-blue;
             }
         }
 
@@ -114,13 +114,13 @@
             position: absolute;
             bottom: 0;
             left: 0;
-            background-color: $light-blue2;
+            background-color: $pattens-blue;
             border-radius: 5px;
         }
 
         &.active {
             &:after {
-                background-color: $light-blue;
+                background-color: $pale-cornflower-blue;
             }
 
         }
@@ -180,7 +180,7 @@
         width: 20px;
         height: 3px;
         margin: 3px;
-        background-color: $blue;
+        background-color: $jordy-blue;
     }
 }
 
