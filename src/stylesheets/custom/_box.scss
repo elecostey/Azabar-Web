@@ -14,17 +14,43 @@
     &--blue {
         background-color: $picton-blue;
         justify-content: flex-start;
-        display: block;
-        
+
+        @media (max-width: 991px) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
     }
 
     &--white {
         background-color: white;
         border-radius: 8px;
-        min-height: 40px;
+        min-height: 44px;
+        margin: 10px 20px;
+        padding: 0 30px;
+        flex-wrap: wrap;
+
+        @media (max-width: 991px) {
+           
+            max-width: 90%;
+        }
+
+        p {
+            margin: 0;
+            color: $prussian-blue;
+            font-size: 16px;
+        }
     }
 
-    &--aligned-left {
+    &--pipe {
+        p:first-child {
+            &:after {
+                content: '|';
+                margin: 0 10px;
+            }
+        }
+    }
+
+    &--align-left {
         justify-content: flex-start;
     }
 }

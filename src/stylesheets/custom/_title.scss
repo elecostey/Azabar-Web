@@ -6,9 +6,16 @@
 
     &--blue {
         color: $light-sky-blue;
-        max-width: 330px;
         text-align: left;
-        margin-left: 15px;
+        padding: 10px 30px 10px 0;
+        width: 370px;
+        margin: 0 15px;
+        
+
+        @media (max-width: 991px) {
+            text-align: center;
+            width: 100%;
+        }
 
         span {
             color: white;

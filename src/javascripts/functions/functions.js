@@ -5,7 +5,9 @@ import scroll from './scroll';
 import referencesPreview from './referencesPreview';
 import getEmailSubject from './getEmailSubject';
 import formSubmitHandler from './formSubmitHandler';
+import togglePipeVisibility from './togglePipeVisibility';
 
+const debounce = require('debounce');
 
 const functionsInit = function() {
     $(function() {
@@ -16,7 +18,16 @@ const functionsInit = function() {
         referencesPreview();
         getEmailSubject();
         formSubmitHandler();
+        togglePipeVisibility();
     });
 };
+
+if ('addEventListener' in window) {
+    const handleResize = debounce(function() {
+        togglePipeVisibility();
+    }, 250);
+ 
+    window.addEventListener('resize', handleResize);
+}
 
 export default functionsInit;
