@@ -46,7 +46,7 @@ const config = {
                 use: ['html-loader?interpolate'],
             },
             {
-                test: /\.(jpg|png)$/,
+                test: /\.(jpg|png|svg)$/,
                 use: [
                     {
                         loader: "file-loader",
@@ -59,7 +59,7 @@ const config = {
                 ]
             },
             {
-                test: /\.(woff2?|ttf|eot|svg)$/,
+                test: /\.(woff2?|ttf|eot)$/,
                 use: [
                     {
                         loader: "file-loader",
