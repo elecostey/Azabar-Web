@@ -1,6 +1,18 @@
 .img-box {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+
     &--3 {
         width: calc(100% / 3);
+    }
+
+    @media (max-width: 480px) {
+        width: 100%;
+        height: 70vh;
+        display: block;
+        margin: 15px 0;
     }
 
     img {

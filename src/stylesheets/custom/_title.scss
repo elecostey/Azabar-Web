@@ -4,7 +4,7 @@
     text-align: center;
     margin: 0;
 
-    &--blue {
+    &--light-blue {
         color: $light-sky-blue;
         text-align: left;
         padding: 10px 30px 10px 0;
@@ -17,12 +17,18 @@
             padding: 10px 0;
         }
 
-      
-
         span {
             color: white;
         }
     }
+
+    &--blue {
+        color: $picton-blue;
+        padding: 10px 15px;
+    }
+
+
+
 
     
 
