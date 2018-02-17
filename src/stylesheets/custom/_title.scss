@@ -27,6 +27,18 @@
         padding: 10px 15px;
     }
 
+    &--lg {
+        padding: 10px 0;
+    }
+
+    &--sm {
+        padding: 10px 70px 10px 0;
+
+        @media (max-width: 991px) {
+            padding: 10px 0;
+        }
+    }
+
 
 
 
