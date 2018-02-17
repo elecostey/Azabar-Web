@@ -107,6 +107,11 @@ const config = {
             filename: 'html/hr/products.html',
             chunks: ['app', 'vendor'],
         }),
+        new HtmlWebpackPlugin({
+            template: 'src/html/hr/services.html',
+            filename: 'html/hr/services.html',
+            chunks: ['app', 'vendor'],
+        })
     ],
 
     resolve: {

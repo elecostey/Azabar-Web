@@ -4,6 +4,25 @@
     align-items: center;
     min-height: 70px;
 
+    &--text {
+        background-color: $whisper;
+        padding: 15px;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-bottom: 8px;
+        
+        @media (max-width: 991px) {
+            display: block;
+        }
+
+        p, ul {
+            font-size: 16px;
+            color: $prussian-blue;
+            text-align: justify;
+        }
+        
+    }
+
     &--light-grey {
         background-color: $gainsboro;
         width: 50%;
@@ -14,6 +33,7 @@
 
         p {
             color: $prussian-blue;
+            text-align: justify;
         }
     }
 
@@ -22,6 +42,10 @@
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
         margin: 8px 0;
+
+        .products--services-page & {
+            margin-bottom: 0;
+        }
     }
 
     &--blue {
@@ -230,6 +254,15 @@
         @media (max-width: 480px) {
             height: 100%;
             display: block;
+        }
+    }
+
+    &__content {
+        width: calc(50% - 7.5px);
+
+         
+        @media (max-width: 991px) {
+            width: 100%;
         }
     }
 
