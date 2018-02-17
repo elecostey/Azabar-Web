@@ -2,6 +2,10 @@
     background-color: white;
     padding: 10px 25px;
 
+    &--page {
+        padding: 0 20px;
+    }
+
     &__btn {
         background-color: $whisper;;
         height: 75px;

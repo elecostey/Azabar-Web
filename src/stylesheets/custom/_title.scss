@@ -20,6 +20,10 @@
         span {
             color: white;
         }
+
+        .box--sm & {
+            width: 100%;
+        }
     }
 
     &--blue {
