@@ -17,9 +17,7 @@
     &--lg {
         &:before {
             margin-top: -249px; 
-            height: 249px; 
-            visibility: hidden; 
-            pointer-events: none;
+            height: 249px;
     
             @media (max-width: 991px) {
                 margin-top: -169px; 

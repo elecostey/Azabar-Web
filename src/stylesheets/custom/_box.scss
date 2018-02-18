@@ -217,6 +217,7 @@
         height: 35vw;
         max-height: 425px;
         padding-bottom: 8px;
+        position: relative;
 
         @media (max-width: 991px) {
             display: block;

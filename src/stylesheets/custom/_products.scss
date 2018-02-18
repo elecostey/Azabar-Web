@@ -4,9 +4,13 @@
 
     &--page {
         padding: 0 20px;
+        margin-top: 90px;
     }
 
     &--services-page {
+        padding: 0 20px;
+        margin-top: 90px;
+
         img {
             width: 100%;
             margin-bottom: 8px;
@@ -47,5 +51,6 @@
         left: 50%;
         transform: translateX(-50%);
         width: 100%;
+        z-index: 10;
     }
 }

@@ -53,6 +53,10 @@
         padding: 0;
         align-items: center;
 
+        @media (min-width: 992px) {
+           display: flex !important;
+        }
+
 
         @media (max-width: 991px) {
             width: 100%;
@@ -60,15 +64,10 @@
             top: 80px;
             display: block;
             left: 0;
-            transform: translateY(-100%);
-            transition: 600ms ease-out;
-            z-index: -1;
             background-color: white;
+            display: none;
         }
 
-        &--visible {
-            transform: translateY(0%);
-        }
 
         a {
             width: 80px;
