@@ -1,6 +1,7 @@
 .contact {
     background-color: white;
-    padding: 30px 100px 60px;
+    padding: 30px 100px 30px;
+    position: relative;
 
     @media (max-width: 991px) {
         padding: 30px;
@@ -103,7 +104,31 @@
         }
     }
 
+    &__status-mail {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 80px;
+        margin-top: 30px;
+    }
+
     &__success-mail {
+        display: none;
+        text-align: center;
+        color: #346799;
+        font-weight: bold;
+        font-size: 28px;
+    }
+
+    &__recaptcha-fail {
+        display: none;
+        text-align: center;
+        color: #993434;
+        font-weight: bold;
+        font-size: 28px;
+    }
+
+    &__sending-gif {
         display: none;
     }
 }
