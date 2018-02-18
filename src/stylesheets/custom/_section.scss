@@ -1,0 +1,31 @@
+.section-offset {
+
+    &:before {
+        display: block; 
+        content: " "; 
+        margin-top: -159px; 
+        height: 159px; 
+        visibility: hidden; 
+        pointer-events: none;
+
+        @media (max-width: 991px) {
+            margin-top: -79px; 
+            height: 79px; 
+        }
+    }
+
+    &--lg {
+        &:before {
+            margin-top: -249px; 
+            height: 249px; 
+            visibility: hidden; 
+            pointer-events: none;
+    
+            @media (max-width: 991px) {
+                margin-top: -169px; 
+                height: 169px; 
+            }
+        }
+    }
+    
+}

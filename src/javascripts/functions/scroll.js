@@ -1,28 +1,6 @@
 const scroll = function() {
 
-    const debounce = require('debounce');
-
-    let topOffset = 159;
-
-    function calculateTopOffset() {
-        if ($(window).width() < 992) {
-            topOffset = 79;
-        } else {
-            topOffset = 159;
-        }
-        return topOffset;
-    }
-
-    window.onresize = debounce(calculateTopOffset, 200);
-    screen.onorientationchange = debounce(calculateTopOffset, 200);
-
-    calculateTopOffset();
-
-    $('.navbar').scrollspy({
-        offset: topOffset
-    });
-
-    $('.header__link, .header__brand').click(function () {
+    $('.header__link--home, .header__brand--home').click(function () {
         let sectionId = $(this).attr('href');
         if ($(this).hasClass('header__link')) {
             sectionId = $(this).children().attr('href');
@@ -30,7 +8,7 @@ const scroll = function() {
             $('.header__link').not(this).removeClass('active');
         }
         $('html, body').animate({
-            scrollTop: $(sectionId).offset().top - topOffset
+            scrollTop: $(sectionId).offset().top
         }, 1000);
         return false;
     });
