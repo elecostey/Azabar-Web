@@ -3,32 +3,13 @@
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: 102% auto;
+    width: 100%;
 
     @media (max-width: 991px) {
         background-size: cover;
     }
 
-    &--1 {
-        width: 100%;
-    }
-
-    &--2 {
-        width: 50%;
-    }
-
-    &--3 {
-        width: calc(100% / 3);
-    }
-
-    &--4 {
-        width: calc(100% / 4);
-        @media (max-width: 480px) {
-            background-size: contain;
-        }
-    }
-
-    &--5 {
-        width: calc(100% / 5);
+    &--sm {
         @media (max-width: 480px) {
             background-size: contain;
         }

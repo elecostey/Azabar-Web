@@ -1,0 +1,46 @@
+<section id="contact" class="section-offset">
+    <div class="contact">
+        <h2 class="contact__title">How can we help you?</h2>
+        <form action="../../../send-email.php" method="post">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-md-push-6">
+                    <div class="input-checkbox">
+                        <h3 class="contact__title contact__title--small">Select your interest</h3>
+                        <input class="input-checkbox" type="radio" id="option1" name="subject" value="comment" checked required/>
+                        <label for="option1">I'd like to comment</label>
+                        <input class="input-checkbox" type="radio" id="option2" name="subject" value="information">
+                        <label for="option2">I need information</label>
+                        <input class="input-checkbox" type="radio" id="option3" name="subject" value="appointment">
+                        <label for="option3">I want to make an appointment</label>
+                        <input class="input-checkbox" type="radio" id="option4" name="subject" value="buy">
+                        <label for="option4">I want to buy a solution</label>
+                        <input type="hidden" id="subject-text" name="subject-text" value="">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-md-pull-6">
+                    <input type="text" name="name" placeholder="Name" required/>
+                    <input type="email" name="email" placeholder="E-mail" required/>
+                    <input type="text" name="phone" placeholder="Phone" required/>
+                    <input type="text" name="company" placeholder="Company" required/>
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <textarea name="message" placeholder="Message" required></textarea>
+                </div>
+                <div class="col-md-4">
+                    <div class="contact__send">
+                            <div class="g-recaptcha" data-sitekey="6LfBEEUUAAAAAMED2WTxF5iKuXx9BdxEWNkHcZT-"></div>
+                        <input id="btn" type="submit" value="Submit"/>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="contact__status-mail">
+            <img class="contact__sending-gif" src="../../../images/sending.gif">
+            <p class="contact__success-mail">Javiti ćemo Vam se u najkraćem mogućem roku.</p>
+            <p class="contact__recaptcha-fail">Molimo potvrdite da niste robot.</p>
+        </div>
+    </div>
+</section>

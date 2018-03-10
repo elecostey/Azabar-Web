@@ -6,23 +6,16 @@
 
     &__wrapper {
         position: relative;
-        height: 250px;
+        height: 160px;
         background-color: white;
         max-width: 1220px;
         width: 100%;
         margin: 0 auto;
         padding: 0 15px;
+        box-shadow: 0px 2px 14px rgba(0, 0, 0, 0.31);
 
         @media (max-width: 991px) {
-            height: 170px;
-        }
-
-        &--home {
-            height: 160px;
-
-            @media (max-width: 991px) {
-                height: 80px;
-            }
+            height: 80px;
         }
     }
 
@@ -70,11 +63,11 @@
 
 
         a {
-            width: 80px;
+            width: 95px;
             text-align: center;
             color: $jordy-blue;
 
-            @media (max-width: 991px) {
+            @media (max-width: 1199px) {
                 width: 100%;
             }
 
@@ -169,10 +162,59 @@
         align-items: center;
         width: 130px;
         justify-content: center;
+        position: relative;
+        cursor: pointer
     }
 
     &__other-languages {
-        display: none;
+        position: absolute;
+        top: 45%;
+        right: 0;
+        padding: 20px 20px 20px 50px;
+        background-color: white;
+        width: calc(100% + 30px);
+        box-shadow: 0px 2px 14px rgba(0, 0, 0, 0.31);
+        list-style: none;
+        margin: 0;
+        z-index: -1;
+        transition: 500ms ease-out;
+
+        @media (max-width: 991px) {
+            width: 100%;
+            padding: 20px;
+            top: -5%;
+        }
+
+        &--open {
+            top: 100%;
+        }
+        
+        a {
+            display: block;
+            width: 100%;
+        }
+
+        img {
+            display: block;
+
+            @media (max-width: 991px) {
+                margin: 0 auto;
+            }
+        }
+    }
+
+    &__arrow {
+        margin-left: 15px;
+        transform: rotate(0deg);
+        transition: transform 400ms ease-out;
+
+        @media (max-width: 991px) {
+            display: none;
+        }
+
+        &--up {
+            transform: rotate(-180deg);
+        }
     }
 
     &__hamburger-container {

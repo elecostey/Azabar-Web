@@ -10,4 +10,19 @@
         padding-top: 80px;
     }
 
+    &__box-sticky {
+        position: fixed;
+        width: 100%;
+        max-width: 1220px;
+        padding: 0 20px;
+        z-index: 5;
+        padding-top: 25px;
+        background-color: white;
+        top: 155px;
+
+        @media (max-width: 991px) {
+            top: 75px;
+        }
+    }
+
 }

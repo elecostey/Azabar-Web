@@ -111,6 +111,21 @@ const config = {
             template: 'src/html/hr/services.html',
             filename: 'html/hr/services.html',
             chunks: ['app', 'vendor'],
+        }),
+        new HtmlWebpackPlugin({
+            template: 'src/html/en/business-solutions.html',
+            filename: 'html/en/business-solutions.html',
+            chunks: ['app', 'vendor'],
+        }),
+        new HtmlWebpackPlugin({
+            template: 'src/html/en/products.html',
+            filename: 'html/en/products.html',
+            chunks: ['app', 'vendor'],
+        }),
+        new HtmlWebpackPlugin({
+            template: 'src/html/en/services.html',
+            filename: 'html/en/services.html',
+            chunks: ['app', 'vendor'],
         })
     ],
 
