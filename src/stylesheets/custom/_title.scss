@@ -36,7 +36,15 @@
     }
 
     &--sm {
-        padding: 10px 70px 10px 0;
+        padding: 10px 80px 10px 0;
+
+        @media (max-width: 991px) {
+            padding: 10px 0;
+        }
+    }
+
+    &--xs {
+        padding: 10px 115px 10px 0;
 
         @media (max-width: 991px) {
             padding: 10px 0;

@@ -1,7 +1,7 @@
 const nav = function() {
     const navIcon = $('.header__hamburger');
     const headerNav = $('.header__nav');
-    const flag = $('.header__language');
+    const flag = $('.header__language img');
     const languages = $('.header__other-languages');
     const arrow = $('.header__arrow');
     let languagesIsHidden = true;
